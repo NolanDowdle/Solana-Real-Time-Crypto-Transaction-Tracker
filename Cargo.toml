@@ -5,10 +5,14 @@ edition = "2021"
 
 [dependencies]
 ferris-says = "0.3.1"
-redis = { version = "0.27.4", features = ["tokio", "tls"] } 
+redis = { version = "0.27.4", features = ["tokio", "tls", "cluster"] }  # Combine features
 reqwest = "0.11"
 solana-client = "2.0.13"
 solana-sdk = "2.0.13"
 serde_json = "1.0"
 num-format = "0.4"
 tokio = { version = "1.40.0", features = ["full"] }
+
+
+
+
